@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iphone" translatesAutoresizingMaskIntoConstraints="NO" id="guD-ag-MYL">
+                                <rect key="frame" x="200" y="200" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="W1g-kH-7S0"/>
+                                    <constraint firstAttribute="width" constant="200" id="XY4-Zb-Rbw"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Edc-Kr-Y36">
+                                <rect key="frame" x="250" y="542" width="100" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="0hG-2X-cbV"/>
+                                    <constraint firstAttribute="height" constant="50" id="cHY-gZ-hPs"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="guD-ag-MYL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1YE-6H-1yJ"/>
+                            <constraint firstItem="Edc-Kr-Y36" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ghC-bh-RO7"/>
+                            <constraint firstItem="guD-ag-MYL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="mYI-0c-QQV"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Edc-Kr-Y36" secondAttribute="bottom" constant="8" id="riT-Et-rYi"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="payView" destination="Edc-Kr-Y36" id="c8y-ZS-jFt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="303"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="iphone" width="436" height="384"/>
+    </resources>
+</document>
